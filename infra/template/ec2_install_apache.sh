@@ -10,4 +10,6 @@ cd python-mysql-db-proj-1
 pip3 install -r requirements.txt
 echo 'Waiting for 30 seconds before running the app.py'
 setsid python3 -u app.py &
+cd templates
+python3 -m http.server 5000
 sleep 30
